@@ -1,0 +1,17 @@
+package com.ano.taco.web;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+/**
+ * @author wangjiao
+ * @version 1.0
+ * @date 2021/12/28 13:57
+ */
+@Controller
+public class HomeController {
+    @GetMapping("/")
+    public String home() {
+        return "home";
+    }
+}
